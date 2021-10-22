@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/main.css";
+import { FaCircle } from "react-icons/fa";
 
 const Typing = ({ id, name, time }) => {
   return (

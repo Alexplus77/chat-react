@@ -3,7 +3,9 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
+ul{
+  list-style-type: none;
+}
 body {
   background: #C5DDEB;
   font: 14px/20px "Lato", Arial, sans-serif;

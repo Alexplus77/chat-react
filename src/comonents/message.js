@@ -1,12 +1,14 @@
 import React from "react";
 import "../css/main.css";
+import { FaCircle } from "react-icons/fa";
 
 const Message = ({ id, name, text, time }) => {
   return (
     <li>
       <div key={id} className="message-data">
         <span className="message-data-name">
-          <i className="fa fa-circle online"> </i> {name}
+          {" "}
+          <FaCircle className="fa fa-circle online" /> {name}
         </span>
         <span className="message-data-time">{time}</span>
       </div>
