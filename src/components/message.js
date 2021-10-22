@@ -1,8 +1,8 @@
 import React from "react";
-import "../css/main.css";
+import "css/main.css";
 import { FaCircle } from "react-icons/fa";
 
-const Message = ({name, text, time }) => {
+const Message = ({ name, text, time }) => {
   return (
     <li>
       <div className="message-data">

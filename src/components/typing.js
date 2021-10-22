@@ -1,8 +1,8 @@
 import React from "react";
-import "../css/main.css";
+import "css/main.css";
 import { FaCircle } from "react-icons/fa";
 
-const Typing = ({name, time }) => {
+const Typing = ({ name, time }) => {
   return (
     <li className="clearfix">
       <div className="message-data align-right">

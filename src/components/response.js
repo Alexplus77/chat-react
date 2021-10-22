@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/main.css";
+import "css/main.css";
 import { FaCircle } from "react-icons/fa";
 
 const Response = ({ name, text, time }) => {

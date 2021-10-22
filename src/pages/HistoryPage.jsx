@@ -2,7 +2,8 @@ import React from "react";
 import Message from "components/message";
 import Response from "components/response";
 import Typing from "components/typing";
-import "../css/main.css";
+
+import "css/main.css";
 
 const HistoryPage = ({ list }) => {
   return (
