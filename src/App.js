@@ -1,6 +1,6 @@
 import "../src/css/main.css";
 
-import MessageHistoryPage from "./pages/MessageHistory-Page";
+import HistoryPage from "./pages/HistoryPage";
 
 function App() {
   const messages = [
@@ -40,10 +40,11 @@ function App() {
     },
   ];
   return (
+
     <div className="clearfix container">
       <div className="chat">
         <div className="chat-history">
-          <MessageHistoryPage list={messages} />
+          <HistoryPage list={messages} />
         </div>
       </div>
     </div>

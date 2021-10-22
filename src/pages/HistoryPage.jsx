@@ -1,10 +1,10 @@
 import React from "react";
-import Message from "../comonents/message";
-import Response from "../comonents/response";
-import Typing from "../comonents/typing";
+import Message from "components/message";
+import Response from "components/response";
+import Typing from "components/typing";
 import "../css/main.css";
 
-const MessageHistoryPage = ({ list }) => {
+const HistoryPage = ({ list }) => {
   return (
     <ul>
       {list.map(({ id, from, type, text, time }) => {
@@ -28,4 +28,4 @@ const MessageHistoryPage = ({ list }) => {
   );
 };
 
-export default MessageHistoryPage;
+export default HistoryPage;
