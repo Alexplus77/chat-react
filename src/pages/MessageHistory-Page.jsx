@@ -11,11 +11,15 @@ const MessageHistoryPage = ({ list }) => {
         const { name } = from;
         switch (type) {
           case "message":
-            return <Message id={id} name={name} text={text} time={time} />;
+            return (
+              <Message id={id} name={name} text={text} time={time} key={id} />
+            );
           case "response":
-            return <Response id={id} name={name} text={text} time={time} />;
+            return (
+              <Response id={id} name={name} text={text} time={time} key={id} />
+            );
           case "typing":
-            return <Typing id={id} name={name}  time={time} />;
+            return <Typing id={id} name={name} time={time} key={id} />;
           default:
             return null;
         }

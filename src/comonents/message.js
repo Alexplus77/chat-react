@@ -2,10 +2,10 @@ import React from "react";
 import "../css/main.css";
 import { FaCircle } from "react-icons/fa";
 
-const Message = ({ id, name, text, time }) => {
+const Message = ({name, text, time }) => {
   return (
     <li>
-      <div key={id} className="message-data">
+      <div className="message-data">
         <span className="message-data-name">
           {" "}
           <FaCircle className="fa fa-circle online" /> {name}
