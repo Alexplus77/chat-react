@@ -7,8 +7,8 @@ const Typing = ({ id, name, time }) => {
     <li className="clearfix">
       <div key={id} className="message-data align-right">
         <span className="message-data-time">{time}</span>
-        <span className="message-data-name">{name}</span>
-        <i className="fa fa-circle me"> </i>
+        <span className="message-data-name">{name}</span>{" "}
+        <FaCircle className="fa fa-circle me" />
       </div>
     </li>
   );
