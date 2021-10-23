@@ -2,7 +2,6 @@ import React from "react";
 import Message from "components/message";
 import Response from "components/response";
 import Typing from "components/typing";
-
 import "css/main.css";
 
 const HistoryPage = ({ list }) => {
@@ -20,7 +19,9 @@ const HistoryPage = ({ list }) => {
               <Response id={id} name={name} text={text} time={time} key={id} />
             );
           case "typing":
-            return <Typing id={id} name={name} time={time} key={id} />;
+            return (
+              <Typing id={id} name={name} text={text} time={time} key={id} />
+            );
           default:
             return null;
         }

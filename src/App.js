@@ -1,6 +1,8 @@
 import "css/main.css";
-
 import HistoryPage from "pages/HistoryPage";
+import Typing from "./components/typing";
+import { FaCircle } from "react-icons/fa";
+import React from "react";
 
 function App() {
   const messages = [
@@ -39,6 +41,13 @@ function App() {
       time: "10:31",
     },
   ];
+  Typing.defaultProps = {
+    text: [
+      <FaCircle className="fa fa-circle online" key={1} />,
+      <FaCircle className="fa fa-circle online" key={2} />,
+      <FaCircle className="fa fa-circle online" key={3} />,
+    ],
+  };
   return (
     messages.length > 0 && (
       <div className="clearfix container">
